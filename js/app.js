@@ -60,7 +60,7 @@ var getUnanswered = function(tags) {
 	};
 	
 	$.ajax({
-		url: "http://api.stackexchange.com/2.2/questions/unanswered",
+		url: "https://api.stackexchange.com/2.2/questions/unanswered",
 		data: request,
 		dataType: "jsonp",//use jsonp to avoid cross origin issues
 		type: "GET",
@@ -136,7 +136,7 @@ var getTopanswerers = function(answerers) {
 		site: 'stackoverflow',
 	};
 
-	var stackURL = 'http://api.stackexchange.com/2.2/tags/' + request.tagged + '/top-answerers/all_time';
+	var stackURL = 'https://api.stackexchange.com/2.2/tags/' + request.tagged + '/top-answerers/all_time';
 
 	//alert(stackURL);
 
